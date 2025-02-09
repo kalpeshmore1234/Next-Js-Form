@@ -2,7 +2,7 @@ export async function POST(req) {
   try {
     const body = await req.json();
 
-    const response = await fetch("http://localhost:1337/api/contacts", {
+    const response = await fetch("https://form-strapi-backend.onrender.com/api/contacts", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
